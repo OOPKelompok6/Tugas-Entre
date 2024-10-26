@@ -6,5 +6,5 @@
             <a class="btn text-light mx-3">Challenges</a>
             <a class="btn text-light mx-3">Store</a>
         </div>
-    <a class="btn btn-light fw-bold rounded-pill me-2">Discover and Read for Free</a>
+    <a href="/register" class="btn btn-light fw-bold rounded-pill me-2">Discover and Read for Free</a>
 </nav>
