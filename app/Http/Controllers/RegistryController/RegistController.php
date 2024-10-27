@@ -44,7 +44,7 @@ class RegistController extends Controller {
 
             if (Auth::attempt(['email' => $validatedData['email'], 'password' => $validatedData['password']])) {
                 Session::put('key', 'value');
-                return redirect()->route('home'); 
+                return redirect()->route('homeLogged'); 
             } else {
                 return redirect()->back()->withErrors(['login' => 'Invalid credentials'])->withInput();
             }
@@ -66,5 +66,11 @@ class RegistController extends Controller {
 
             return redirect()->route('login');
         }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/'); 
     }
 }

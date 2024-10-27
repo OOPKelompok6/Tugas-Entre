@@ -3,7 +3,11 @@
     <div class="container-fluid px-0 py-0 mx-0 my-0" style="background-image: url('{{ asset('images/mainThumbnail.jpg') }}'); background-size: cover; background-position: center; min-height: 100vh;"> 
         
         <!-- Navbar -->
-        <x-Universal.navbar></x-Universal.navbar>
+        @if ($routeCond)
+            <x-Universal.navbarLogged></x-Universal.navbarLogged>
+        @else
+            <x-Universal.navbar></x-Universal.navbar>
+        @endif
 
         <!-- Content -->
         <x-MainPage.mainPageContent></x-MainPage.mainPageContent>
