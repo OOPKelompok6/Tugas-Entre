@@ -50,6 +50,6 @@ class StoreController extends Controller {
             'quantity' => $request->input('quant')  
         ]);
 
-        return view('Details', ['routeCond' => true, 'book' => table_book::find($request->input('item_id'))]);
+        return return redirect()->back();
     }
 }

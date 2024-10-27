@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\table_book;
 
 class cartCollection extends Model
 {
@@ -14,4 +15,9 @@ class cartCollection extends Model
         'table_book_id',
         'quantity'
     ];
+
+    public function book()
+    {
+        return $this->belongsTo(table_book::class, 'table_book_id');
+    }
 }

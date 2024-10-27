@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\RegistryController\{RegistController, HomeController, StoreController, CartController};
 
+Route::post('/cart/checkout', [CartController::class, "removeAll"])->name('cart.checkout');
+Route::post('/cart/removeItem', [CartController::class, "removeItem"])->name('cart.removeItem');
+Route::get('/cart', [CartController::class, "setCart"])->name('cart.init');
 Route::post('/details', [StoreController::class, "addItemtoGlobalCart"])->name('detailsAdd');
 Route::get('/details', [StoreController::class, "setItemDetails"])->name('details');
 Route::get('/store', [StoreController::class, "setStore"])->name('store');
