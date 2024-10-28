@@ -76,7 +76,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
    > 1. `composer require riari/laravel-forum:~6.0 `
    > 2. `php artisan vendor:publish`
    > 3. `php artisan migrate:fresh`
-   > 4. `npm i @simonwep/pickr axios bootstrap feather-icons vue vuedraggable@next`
+   > 4. `php artisan forum:preset-install blade-bootstrap`
+   > 5. `npm i @simonwep/pickr axios bootstrap feather-icons vue vuedraggable@next`
 
 2. Run laravel server
 
