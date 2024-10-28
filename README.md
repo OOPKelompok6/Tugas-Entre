@@ -64,3 +64,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+---
+
+
+## To run this project server
+
+1. Install forum package (blade-bootstrap)
+
+   > 1. `composer require riari/laravel-forum:~6.0 `
+   > 2. `php artisan vendor:publish`
+   > 3. `php artisan migrate:fresh`
+   > 4. `npm i @simonwep/pickr axios bootstrap feather-icons vue vuedraggable@next`
+
+2. Run laravel server
+
+   > `php artisan serve`
+
+3. Run vite server
+
+   > In order to use the forum, vite server must be deployed
+   >
+   > `npm run dev`
