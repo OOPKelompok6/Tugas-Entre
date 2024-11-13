@@ -50,6 +50,6 @@ class StoreController extends Controller {
             'quantity' => $request->input('quant')  
         ]);
 
-        return return redirect()->back();
+        return redirect()->back();
     }
 }
