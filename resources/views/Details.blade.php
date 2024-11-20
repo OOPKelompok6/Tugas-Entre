@@ -16,21 +16,22 @@
                 <img src="https://shadycharacters.co.uk/wp/wp-content/uploads/2016/12/Book_IMG_1754-1-e1481474081467.jpg" class="img-fluid rounded-start">
                 </div>
                 <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $book->bookName }}</h5>
-                    <p class="card-text">{{ $book->description }}</p>
-                    <p class="card-text">{{ "Author: ".$book->bookAuthor }}</p>
-                    <p class="card-text">{{ "Publisher: ".$book->publisher }}</p>
-                    <p class="card-text fw-semibold">{{ "ISBN: ".$book->ISBN }}</p>
-                    <p class="card-text"><small class="text-muted">{{ "$".$book->price }}</small></p>
-                    <form id="theForm" action="{{ route('detailsAdd') }}" method="POST">
-                        @csrf
-                        <label for="inputQuant" class="form-label">Quantity: </label>
-                        <input name="quant" type="number" min="1" max="100" class="form-control-outline-dark" id="inputQuant">
-                        <input type="hidden" name="item_id" value="{{ $book->id }}">
-                    </form>
-                    <button form="theForm" class="btn btn-outline-dark mt-3" type="submit">Add to cart</button>
-                </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $book->bookName }}</h5>
+                        <p class="card-text">{{ $book->description }}</p>
+                        <p class="card-text">{{ "Author: ".$book->bookAuthor }}</p>
+                        <p class="card-text">{{ "Publisher: ".$book->publisher }}</p>
+                        <p class="card-text fw-semibold">{{ "ISBN: ".$book->ISBN }}</p>
+                        <p class="card-text"><small class="text-muted">{{ "$".$book->price }}</small></p>
+                        <form id="theForm" action="{{ route('detailsAdd') }}" method="POST">
+                            @csrf
+                            <label for="inputQuant" class="form-label">Quantity: </label>
+                            <input name="quant" type="number" min="1" max="100" class="form-control-outline-dark" id="inputQuant">
+                            <input type="hidden" name="item_id" value="{{ $book->id }}">
+                        </form>
+                        <a href="/SampleRead" class="btn btn-outline-dark mt-3">Read</a>
+                        <button form="theForm" class="btn btn-outline-dark mt-3" type="submit">Add to cart</button>
+                    </div>
                 </div>
             </div>
         </div>

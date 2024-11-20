@@ -26,6 +26,9 @@
             <div class="collapse navbar-collapse" :class="{ show: !isCollapsed }">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="/homeLogged">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ url(config('forum.frontend.router.prefix')) }}">{{ trans('forum::general.index') }}</a>
                     </li>
                     <li class="nav-item">
