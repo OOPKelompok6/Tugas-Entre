@@ -3,7 +3,7 @@
         <div id="buttonsContainer" class="mx-auto">
             <a href="/homeLogged" class="btn text-light mx-3">Home</a>
             <a href="/forum" class="btn text-light mx-3">Community</a>
-            <a class="btn text-light mx-3">Profile</a>
+            <a href="/profile" class="btn text-light mx-3">Profile</a>
             <a class="btn text-light mx-3">Challenges</a>
             <a href="/store" class="btn text-light mx-3">Store</a>
         </div>
