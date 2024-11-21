@@ -13,8 +13,7 @@ class StoreController extends Controller {
 
         $data = [
             'routeCond' => false,
-            'items' => table_book::take(4)->get(),
-            'bottomFour' => table_book::orderBy('id', 'desc')->take(4)->get()
+            'items' => table_book::take(12)->get(),
         ];
         if(Auth::check()) {
             $data['routeCond'] = true;
